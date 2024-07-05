@@ -1,0 +1,15 @@
+__pycache__
+*.swo
+*.swp
+*.iml
+.idea
+.vscode
+.python-version
+polizoa_credentials.json
+/.env
+/.DS_Store
+/data
+/data.json
+data.json
+data-wrangler.iml
+venv
