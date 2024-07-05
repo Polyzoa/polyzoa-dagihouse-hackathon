@@ -1,0 +1,6 @@
+# pipreqs /path/to/project
+
+pycaret==3.3.2
+shap==0.44.1
+ydata-profiling
+umap-learn==0.5.6

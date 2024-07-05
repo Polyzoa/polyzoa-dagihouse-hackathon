@@ -1,0 +1,4 @@
+data/token_data.csv
+venv/
+*.log
+*.html

@@ -1,0 +1,20 @@
+[
+    {
+        "avg_transaction_value": 500.0,
+        "max_transaction_value": 750.0,
+        "transaction_frequency": 500,
+        "liquidity_pool_size": 2000.0,
+        "holder_count": 300,
+        "token_age": 50,
+        "high_contract_supply": true,
+        "rate_of_failed_transactions": 0.8,
+        "small_transactions_ratio": 0.7,
+        "number_of_pool_interactions": 200,
+        "has_spam_name": true,
+        "owner_percentage_holding": 0.7,
+        "creator_percentage_holding": 0.6,
+        "creator_type_contract": true,
+        "owner_type_contract": true
+    }
+]
+
