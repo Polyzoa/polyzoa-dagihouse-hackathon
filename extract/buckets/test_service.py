@@ -7,10 +7,10 @@ class TestBuckets(TestCase):
 
     def test_list(self):
         os.environ.setdefault("GOOGLE_APPLICATION_CREDENTIALS", "../polizoa_credentials.json")
-        files = buckets.list("data-wrangler", "ethereum")
+        files = buckets.list_files("data-wrangler", "ethereum")
         self.assertIsNotNone(files)
         for file in files:
-            print(file.name)
+            print(f'"{file.name}",')
 
     def test_get(self):
         os.environ.setdefault("GOOGLE_APPLICATION_CREDENTIALS", "../polizoa_credentials.json")
