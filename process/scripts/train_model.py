@@ -34,6 +34,9 @@ def train_and_select_model(compare: bool, tune: bool):
 
     # Interpret model
     os.makedirs('results', exist_ok=True)
+    plot_model(model, plot='auc', save='results/')
+    plot_model(model, plot='error', save='results/')
+    plot_model(model, plot='learning', save='results/') # Takes too long
     interpret_model(model, plot='summary', save='results/')
     interpret_model(model, plot='correlation', save='results/')
     # interpret_model(model, plot='reason', save='results/')

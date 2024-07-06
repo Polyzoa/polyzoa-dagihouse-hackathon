@@ -40,13 +40,13 @@ def generate_token_data(malicious=False):
 
     # Create some dummy malicious data
     if malicious:
-        avg_transaction_value = np.random.uniform(1, 1000)
-        max_transaction_value = avg_transaction_value + np.random.uniform(0, 500)
-        holder_count = np.random.randint(1, 1000)
-        rate_of_failed_transactions = np.random.uniform(0.5, 1)
-        small_transactions_ratio = np.random.uniform(0.5, 1)
-        owner_percentage_holding = np.random.uniform(0.5, 1)
-        creator_percentage_holding = np.random.uniform(0.5, 1)
+        avg_transaction_value = np.random.uniform(1, 180)
+        max_transaction_value = avg_transaction_value + np.random.uniform(0, 100)
+        holder_count = np.random.randint(1, 5000)
+        rate_of_failed_transactions = np.random.uniform(0.3, 1)
+        small_transactions_ratio = np.random.uniform(0.3, 1)
+        owner_percentage_holding = np.random.uniform(0.3, 1)
+        creator_percentage_holding = np.random.uniform(0.3, 1)
 
     return [
         avg_transaction_value,
