@@ -13,3 +13,6 @@ polizoa_credentials.json
 data.json
 data-wrangler.iml
 venv
+/extract/features_transformation_example.py
+/extract/contracts.csv
+data
