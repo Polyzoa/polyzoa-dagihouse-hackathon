@@ -27,7 +27,7 @@ class Contract:
     creator_percentage_holding: int | None = None
     creation_date: str | None = None
     owner: str | None = None
-    owner_type_contract: bool | None = None
+    owner_contract_type: bool | None = None
     transaction_number: int | None = None
     is_open_source: bool| None = None
     has_pair: bool | None = None
