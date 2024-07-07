@@ -3,6 +3,7 @@ from pandas import DataFrame
 import buckets
 import holders
 import honeypot
+import metadata
 import transactions
 import transactions_summary
 from extract import Contract
@@ -28,6 +29,8 @@ def extract_data(chain_address: str, files: list[str]) -> Contract:
         data = buckets.get("data-wrangler", file)
         if file.endswith("blacklist.json"):
             contract.is_blacklisted = data["is_blacklisted"]
+        elif file.endswith("metadata.json"):
+            metadata.extract_data(contract, data)
         elif file.endswith("bitquery.json"):
             bitquery.extract_data(contract, data)
         elif file.endswith("dexscreener.json"):
